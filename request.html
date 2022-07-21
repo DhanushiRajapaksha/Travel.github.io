@@ -1,0 +1,136 @@
+<html>
+    <head>
+        <title>Request a Tour</title>
+        <link rel="stylesheet" href="Request_sites_CSS.css">
+        <script type="text/javascript" src="Sub_Sites_JS.js"> </script>
+        <link rel="icon" type="image/x-icon" href="icon.ico">
+
+        
+    </head>
+    <body onload=display_ct(); class="bg" style="background-image: url(4.jpg); width:100%; height: 100%;">
+        <ul class="navi_bar"> 
+            <li class="li1"><img src="icon.png" style="width:100px; height:55px;"></li>
+            <li class="li1"><h3 style="color:white; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight:30px; display:center;">Tourist Places in Sri Lanka</h3></li>
+            
+            <li class="li2"><a href="#contacts">Contact</a></li>
+            <li class="li2"><a href="FP2.html#categories">Categories</a></li>
+            <li class="li2"><a href="FP2.html">Home</a></li>
+        </ul>
+        <center>
+            <form class="container">
+            <h1 style="color: beige">Packges</h1>
+            <table class="pkg" border="5px">
+                <tr>
+                    
+                    <th class="row"><center>Package 01</center></th>
+                    <th class="row"><center>Package 02</center></th>
+                    <th class="row"><center>Package 03</center></th>
+                    <th class="row"><center>Package 04</center></th>
+                    <th class="row"><center>Custom Packages</center></th>
+                </tr>
+                <tr>
+                    <td class="row"><center>
+                        
+                            Sigiriya,<br><br>
+                            Dambulla,<br><br>
+                            Minneriya,<br><br>
+                            Polonnaruwa.<br>
+                        
+                    </center></td>
+                    <td class="row"><center>
+                            
+                            Colombo Town,<br><br>
+                            Negombo Town,<br><br>
+                            Negombo Beach,<br><br>
+                            Gampaha Botanic Garden.<br>
+                        
+                    </center></td>
+                    <td class="row"><center>
+                        
+                            Ella,<br><br>
+                            Hakgala Botanic Garden,<br><br>
+                            Hortan Plains.<br>
+                        
+                    </center></td>
+                    <td class="row"><center>
+                        
+                            Temple of the Tooth Relic,<br><br>
+                            Kandy Town,<br><br>
+                            Peradeniya Botanic Garden.<br>
+                        
+                    </center></td>
+                    <td class="row"><center>
+                            You can request places<br> you want to visit<br> by contact us.<br>
+                            <a id="cont" href="#" onclick="callUs()"><img style="width:50px; height:50px; border-radius:50px; padding:10px;"src="call.png"></a>
+           
+                            <a id="cont" href="#" onclick="whatsaAppUs()"><img style="width:50px; height:50px; border-radius:50px; padding:10px;"src="whatsapp.png"></a></center>
+                    </center></td>
+                </tr>
+                <tr>
+                    
+                    <th class="row"><center>$ 155.87</center></th>
+                    <th class="row"><center>$ 125.00</center></th>
+                    <th class="row"><center>$ 114.62</center></th>
+                    <th class="row"><center>$ 93.45</center></th>
+                    <th class="row"><center>Custom Price</center></th>
+                </tr>
+            </table>
+            </form>
+        </center>
+        <hr>
+        <h2 style="color:white; margin-left:40px;">Fill this form to request a tour.</h2>
+        <center>
+            <form class="container1" id="form">
+            <table class="table">
+                <tr>
+                    <td class="inf"><lable class="title">First Name : </lable></td>
+                    <td class="inf"><input class="fill" type="text" id="firstname" placeholder="First name" required></td>
+                </tr>
+                <tr>
+                    <td class="inf"><lable class="title">Last Name : </lable></td>
+                    <td class="inf"><input class="fill" type="text" id="lastname" placeholder="Last name" required></td>
+                </tr>
+                <tr>
+                    <td class="inf"><lable class="title">Address : </lable></td>
+                    <td class="inf"><input class="fill" type="text-area" id="address" placeholder="Address" required></td>
+                </tr>
+                <tr>
+                    <td class="inf"><lable class="title">Mobile NO : </lable></td>
+                    <td class="inf"><input class="fill" type="text" id="mobileno" placeholder="Mobile NO" required></td>
+                </tr>
+                <tr>
+                    <td class="inf"><lable class="title">Email : </lable></td>
+                    <td class="inf"><input class="fill" type="text" id="email" placeholder="Email" required></td>
+                </tr>
+                <tr>
+                    <td class="inf"><lable class="title">Select a Package : </lable></td>
+                    <td class="inf">
+                        <select class="fill" id="package" name="packages">
+                        <option value="p1"><lable class="op">Package 1</lable></optoion>
+                        <option value="p2"><lable class="op">Package 2</lable></optoion>
+                        <option value="p3"><lable class="op">Package 3</lable></optoion>
+                        <option value="p4"><lable class="op">Package 4</lable></optoion>
+                        <option value="p5"><lable class="op">Custom</lable></optoion>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><input class="sb" type="reset" Value="Reset"></td>
+                    <td><input class="sb" type="Submit" Value="Submit"></td>
+                </tr>
+            </table>
+            </form>
+        </center>
+
+        <footer>
+            <p style="font-family: monospace"><center>Traveling destinations in Sri Lanka</center></p>
+            <center><span id="DT"></span></center>
+            <div id="contacts"><center><a id="cont" href="https://www.instagram.com/"><img style="width:50px; height:50px; border-radius:50px; padding:10px;"src="ig.jpg"></a>
+            <a id="cont" href="https://www.facebook.com/"><img style="width:50px; height:50px; border-radius:50px; padding:10px;"src="fb.png"></a>
+            
+            <a id="cont" href="#" onclick="callUs()"><img style="width:50px; height:50px; border-radius:50px; padding:10px;"src="call.png"></a>
+           
+            <a id="cont" href="#" onclick="whatsaAppUs()"><img style="width:50px; height:50px; border-radius:50px; padding:10px;"src="whatsapp.png"></a></center><div>
+        </footer>
+    </body>
+</html>
