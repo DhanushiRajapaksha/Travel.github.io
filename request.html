@@ -13,7 +13,7 @@
             <li class="li1"><h3 style="color:white; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight:30px; display:center;">Tourist Places in Sri Lanka</h3></li>
             
             <li class="li2"><a href="#contacts">Contact</a></li>
-            <li class="li2"><a href="index.html#categories">Categories</a></li>
+            <li class="li2"><a href="#categories">Categories</a></li>
             <li class="li2"><a href="index.html">Home</a></li>
         </ul>
         <center>
@@ -80,32 +80,40 @@
         <hr>
         <h2 style="color:white; margin-left:40px;">Fill this form to request a tour.</h2>
         <center>
-            <form class="container1" id="form">
+            <form class="container1" id="form" action="data.php" method="POST">
             <table class="table">
                 <tr>
                     <td class="inf"><lable class="title">First Name : </lable></td>
-                    <td class="inf"><input class="fill" type="text" id="firstname" placeholder="First name" required></td>
+                    <td class="inf"><input class="fill" type="text" name="firstname" id="firstname" placeholder="First name" required></td>
                 </tr>
                 <tr>
                     <td class="inf"><lable class="title">Last Name : </lable></td>
-                    <td class="inf"><input class="fill" type="text" id="lastname" placeholder="Last name" required></td>
+                    <td class="inf"><input class="fill" type="text" name="lastname" id="lastname" placeholder="Last name" required></td>
                 </tr>
                 <tr>
                     <td class="inf"><lable class="title">Address : </lable></td>
-                    <td class="inf"><input class="fill" type="text-area" id="address" placeholder="Address" required></td>
+                    <td class="inf"><input class="fill" type="text-area" name="addres" id="addres" placeholder="Address" required></td>
                 </tr>
                 <tr>
                     <td class="inf"><lable class="title">Mobile NO : </lable></td>
-                    <td class="inf"><input class="fill" type="text" id="mobileno" placeholder="Mobile NO" required></td>
+                    <td class="inf"><input class="fill" type="text" name="mobileNo" id="mobileno" placeholder="Mobile NO" required></td>
                 </tr>
                 <tr>
                     <td class="inf"><lable class="title">Email : </lable></td>
-                    <td class="inf"><input class="fill" type="text" id="email" placeholder="Email" required></td>
+                    <td class="inf"><input class="fill" type="text" name="email" id="email" placeholder="Email" required></td>
+                </tr>
+                <tr>
+                    <td class="inf"><lable class="title">No of people<br> Join the tour : </lable></td>
+                    <td>
+                        <input type="radio" name="noOfPeople" value="1-5" id="noOfPeople"><lable class="title">1-5</lable><br>
+                        <input type="radio" name="noOfPeople" value="6-10" id="noOfPeople"><lable class="title">6-10</lable><br>
+                        <input type="radio" name="noOfPeople" value="Above 10" id="noOfPeople"><lable class="title">Above 10</lable>
+                    </td>
                 </tr>
                 <tr>
                     <td class="inf"><lable class="title">Select a Package : </lable></td>
                     <td class="inf">
-                        <select class="fill" id="package" name="packages">
+                        <select class="fill" name="package" id="package" name="packages">
                         <option value="p1"><lable class="op">Package 1</lable></optoion>
                         <option value="p2"><lable class="op">Package 2</lable></optoion>
                         <option value="p3"><lable class="op">Package 3</lable></optoion>
@@ -116,7 +124,7 @@
                 
                 <tr>
                     <td><input class="sb" type="reset" Value="Reset"></td>
-                    <td><input class="sb" type="Submit" Value="Submit"></td>
+                    <td><input class="sb" type="Submit" name="submit" Value="Submit"></td>
                 </tr>
             </table>
             </form>
